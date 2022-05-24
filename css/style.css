@@ -1,0 +1,568 @@
+@font-face {
+    font-family: netflixfont;
+    src: url(../fontes/NetflixSansThin.ttf);
+}
+@font-face {
+    font-family: netflixfontRegular;
+    src: url(../fontes/NetflixSansRegular.ttf);
+}
+@font-face {
+    font-family: netflixfontIcons;
+    src: url(../fontes/NetflixSansBold.ttf);
+}
+@font-face {
+    font-family: netflixSansBold;
+    src: url(../fontes/NetflixSansBold.ttf);
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: #141414;
+    color: white;
+    font-family: netflixfont;
+}
+
+@media only screen and (min-width: 1240px){
+    .section{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+    }
+    .nav{
+        color: #E50914;
+        margin-top: 0px;
+        margin-top: 0.8em;
+        margin-left: 3em;
+        font-size: 16px;
+        font-style: normal;
+        letter-spacing: 1px;
+        font-family: netflixfontIcons;
+    }
+    .titulo{
+        text-align: center;
+        color: white;
+        font-size: 23px;
+        font-weight: unset;
+        margin-top: 4.8em;
+        margin-bottom: 1.3em;
+        letter-spacing: 1px;
+        font-style: normal;
+    }
+    .perfil{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: netflixfontRegular;
+    }
+    .conjuntoPerfil{
+        display: flex;
+        flex-direction: column;
+        margin-left: 1.5em;
+        cursor: pointer;
+    }
+    #imgPerfil:hover{
+        border-radius: 0.4em;
+        border: 0.2em solid white;
+    }
+    #imgPerfil{
+        width: 8.5rem;
+        height: 8.5rem;
+        border-radius: 0.4em;
+        border: 0.2em solid transparent;
+    }
+    .nomePerfil{
+        line-height: 1.2em;
+        min-height: 1.8em;
+        color: grey;
+        display: block;
+        text-align: center;
+        font-size: 1.3vw;
+        margin: 0.6em 0;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin-top: 0.1em;
+    }
+    .botao{
+        text-align: center;
+        margin: 1.8em;
+    }
+    #btnPerfil{
+        margin: 2em 0 1em 0;
+        font-size: 1.2vw;
+        border: 1px solid grey;
+        color: grey;
+        padding: .5em 1.5em;
+        letter-spacing: 2px;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    #btnPerfil:hover{
+        border: 1px solid white;
+        color: white;
+    }
+
+
+    /*PÁGINA INDEX*/
+
+    .sectionIndex{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/BR-pt-20220516-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+        height: 100vh;
+        width: 100%;
+    }
+    .navIndex{
+        display: flex;        
+    }
+    .logo{
+        flex:1;
+        color: #E50914;
+        margin-top: 0px;
+        margin-top: 0.8em;
+        margin-left: 3em;
+        font-size: 25px;
+        font-style: normal;
+        letter-spacing: 1px;
+        font-family: netflixfontIcons;
+    }
+    .escolhaNav{
+        flex: 1;
+        justify-content: flex-end;
+        text-align: end;
+        padding: 1em;
+        margin-top: 1em;
+        margin-right: 2em;
+    }
+    .assinatura{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        padding: 5em;
+    }
+    .conteudoAssinaturaTitulo{
+        text-align: center;
+        width: 70%;
+        font-size: 25px;
+        font-family: netflixSansBold;
+    }
+    .conteudoAssinaturaSubTitulo{
+        font-family: netflixfont;
+        margin: 1em 0em 2em 0em;
+    }
+    .conteudoAssinaturaSubTituloSub{
+        font-family: netflixfont;
+        margin: 0em 0em 1em 0em;
+    }
+    .fazerAssinatura{
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        margin-bottom: 4.5em;
+    }
+    #inputAssinatura{
+        margin: 0px;
+        padding-left: 10px; 
+        height: 4em;
+        width: 27em;
+        font-size: 15px;
+        font-family: netflixfontRegular;
+    }
+    #btnAssinatura{
+        margin: 0px;
+        padding: 2px;
+        height: 4em;
+        width: 12em;
+        font-size: 15px;
+        font-family: netflixfontRegular;
+        color: white;
+        background-color: #de0611;
+        border: none;
+        cursor: pointer;
+    }
+    #inputAssinatura:focus, input:focus {
+        box-sizing: border-box;
+        font-family: netflixfontRegular;
+        box-shadow: none!important;
+        border: none;
+        outline: none!important;
+        appearance: none;
+        line-height: normal;
+    } 
+    #btnEntrarIndex{
+        padding: 0.6em 1.5em;
+        background-color: #e50914;
+        color: white;
+        box-shadow: none;
+        border: none;
+        border-radius: 0.2em;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    #selectIdiomaIndex{
+        font-family: netflixfontRegular;
+        padding: 0.7em 1em;
+        background-color: transparent;
+        color: white;
+        margin-right: 2em;
+        border-radius: 0.2em;
+        border-color: white;
+    }
+    #selectIdiomaIndex option{
+        color: white;
+        background-color: grey;
+        padding: 0em;
+        margin: 0em;
+    }
+    .sectionTv{
+        background-color: #000000;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .AproveitarTv{
+        display: flex;
+        
+    }
+    .textoAproveitarTv{
+        flex: 1;
+        justify-content: center;
+        margin-top:8em;
+        height: 20em;
+        padding-left: 7em;
+    }
+    .textoAproveitarTv h1{
+        text-align:justify;
+        font-size: 50px;
+        font-family: netflixSansBold;
+        margin-bottom: 0.5em;
+    }
+    .textoAproveitarTv h2{
+        text-align:justify;
+        width: 85%;
+    }
+    .televisão{
+        flex: 1;
+    }
+    #imgTv{
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        z-index: 2;
+     
+        width: 550px;
+        height: 400px;
+    }
+    #videoTv{
+        position: relative;
+        top: 9%;
+        left: 12%;
+        z-index: 1;
+        width: 400px;
+        height: 300px;
+    }
+    .fundo{
+        background-color: #222222;
+    }
+    .sectionSeries{
+        background-color: #000000;
+    }
+    .series{
+        display: flex;
+    }
+    .imgSeries{
+        flex: 1;
+    }
+    #imgTelefone{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 450px;
+        height: auto;
+        margin-top: 2em;
+    }
+    .TituloSerie{
+        flex: 1;
+        padding: 7em;
+    }
+    .TituloSerie h1{
+        text-align: start;
+        font-size: 50px;
+        font-family: netflixSansBold;
+        margin-bottom: 0.5em;
+    }
+    .card{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        border: 2px solid grey;
+        border-radius: 0.8em;
+        width: 60%;
+        margin-top: -6em;
+        background-color: #000000;
+    }
+    .cardCard{
+        display: flex;
+    }
+    #imgCard{
+        height:auto;
+        width: 50px;
+        margin: 0.5em;
+    }
+    .textCard{
+        flex: 2;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-self: center;
+        text-align: start;
+        font-family: netflixSansBold;
+        margin: 0.5em;
+    }
+    .iconCard{
+        flex: 1;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        align-self: center;
+        text-align: end;
+        font-family: netflixSansBold;
+        margin: 0em 2em ;
+    }
+    .sectionAssista{
+        margin-top: 0.5em;
+        background-color: #000000;
+    }
+    .assistaAssista{
+        display: flex;
+        padding: 3em;
+    }
+    .assistaTexto{
+        flex: 1;
+        justify-content: center;
+        margin-top:8em;
+        height: 20em;
+        padding-left: 4em;
+    }
+    .assistaTexto h1{
+        text-align:justify;
+        font-size: 50px;
+        font-family: netflixSansBold;
+        margin-bottom: 0.5em;
+    }
+    .assistaTexto h2{
+        text-align:justify;
+        width: 75%;
+    }
+    .assistaPc{
+        flex: 1;
+    }
+    #imgDevice{
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        z-index: 2;
+     
+        width: 550px;
+        height: 400px;
+    }
+    #imgVideDevice{
+        position: relative;
+        top: 9%;
+        left: 16%;
+        z-index: 1;
+        width: 340px;
+        height: 200px;
+    }
+    .sectionKids{
+        margin-top: 0.5em;
+        background-color: #000000;
+    }
+    .kidsKids{
+        display: flex;
+        padding: 2em;
+    }
+    .imgKids{
+        flex: 1;
+    }
+    #imgKids{
+        display: block;
+        margin-left: auto;
+        margin-right: -4em;
+        width: 500px;
+        height: auto;
+        margin-top: 3em;
+    }
+    .textKids{
+        flex: 1;
+        padding: 7em;
+    }
+    .textKids h1{
+        font-size: 50px;
+        font-family: netflixSansBold;
+        margin-bottom: 0.5em;
+    }
+    .textKids h2{
+        text-align: justify;
+    }
+    .sectionPerguntas{
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        background-color: #000000;
+    }
+    .perguntaPergunta{
+        width: 52em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #tituloPergunta{
+        padding-top: 1.5em ;
+        padding-bottom: 0.7em ;
+        font-size: 50px;
+        font-family: netflixSansBold;
+    }
+    details {
+        display: block; 
+        width: auto;
+        background: #303030;
+        margin-top: 1em;
+    }
+      
+    details p { 
+        padding: 1em;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: netflixfont;
+        text-align: justify;
+    }
+      
+    summary {
+        display: flex; 
+        background: #303030;
+        color: #fff;
+        padding: 20px;
+        cursor: pointer;
+        font-size: 25px;
+        font-family: netflixfontRegular;
+        border-bottom: black solid 1px;
+        width: 100%;
+    }
+    summary::-webkit-details-marker {
+        display: none;
+    }
+    .tituloSummary{
+        flex: 1;
+        text-align: start;
+    }
+    .iconeSummary{
+        flex: 1;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: end;
+    }
+    #thin-x{
+        width: 25px;
+    }
+    .assinaturaPergunta{
+        width: 52em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 5em;
+    }
+    .footer{
+        background: #000000;
+    }
+    .footerFooter{
+        display: flex;
+        flex-direction: column;
+        width: 60em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duvida{
+        flex: 1;
+        margin: 0em 3em 0em 3em;
+        color: grey;
+        padding-top: 4em;
+    }
+    .menuFooter{
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    .itensMenuFooter{
+        margin: 2em 3em 0em 3em;
+    }
+    .itensMenuFooter ul li{
+        margin-bottom: 1em;
+        list-style: none;
+        font-size: 13px;
+        font-family: netflixfont;
+    }
+    a{
+        color: grey;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline; 
+    }
+    .inputIdiomaFooter{
+        flex: 1;
+        margin: 2em 3em 0em 3em;
+    }
+    #selectIdiomaFooter{
+        font-family: netflixfontRegular;
+        padding: 0.6em 1.2em;
+        background-color: transparent;
+        color: grey;
+        margin-right: 2em;
+        border-radius: 0.1em;
+        border-color: grey;
+        font-size: 17px;
+    }
+    #selectIdiomaFooter option{
+        color: white;
+        background-color: grey;
+        padding: 0em;
+        margin: 0em;
+        font-family: netflixfontRegular;
+        font-size: 14px;
+        text-align: start;
+    }
+    .tipoNetflix{
+        flex: 1;
+        margin: 1em 3em 0em 3em;
+        padding-bottom: 3em;
+    }
+    .tipoNetflix span{
+        color: grey;
+        font-size: 13px;
+        font-family: netflixfont;
+    }
+
+    /*PÁGINA LOGIN*/
+
+    .fundoLogin{
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagens/BR-pt-20220516-popsignuptwoweeks-perspective_alpha_website_medium.jpg)rgba(0, 0, 0, 0.7);
+    }
+    .navLogin{
+        display: flex;
+        flex: 1;
+    }
+    .cardLogin{
+        display: flex;
+        flex-direction: column;
+    }
+}
